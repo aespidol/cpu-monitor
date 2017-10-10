@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts'
+import { LineChart, Line, XAxis, YAxis, CartesianGrid } from 'recharts'
 
 class Graph extends Component {
     constructor(props){
@@ -43,7 +43,7 @@ class Graph extends Component {
 }
 
 Graph.propTypes ={
-
+    load: PropTypes.number.isRequired
 }
 
 export default Graph;
